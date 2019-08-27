@@ -11,18 +11,21 @@ class card extends Component {
     return (
       <div>
       {type === 0 
-        ? <Card>
-        <Card.Img src="/images/mong.png" alt="Logo"/>
-          <Card.Body>
-          <Card.Subtitle><small className="text-muted">Card Label</small></Card.Subtitle>
-          <p className="title">Card Title</p>
-          <Card.Text className="hilight">Hilight <span className="small">Cross Out</span></Card.Text>
-        </Card.Body>
-        {(point!==false || text !== false) && <Card.Footer>
-          {point === true && <Point num={3}/>}
-          {text === true && <p><small className="text-muted">Lorem ipsum dolor sit amet...</small></p>}
-        </Card.Footer>}
-      </Card>
+         ? <Card>
+           <div className="row">
+            <div className="col-sm-12"><Card.Img src="/images/mong.png" alt="Logo"/></div>
+            <Card.Body>
+            <Card.Subtitle><small className="text-muted">Card Label</small></Card.Subtitle>
+            <p className="title">Card Title</p>
+           <Card.Text className="hilight">Hilight <span className="small">Cross Out</span></Card.Text>
+         </Card.Body>
+           </div>
+           
+         {(point!==false || text !== false) && <Card.Footer>
+           {point === true && <Point num={3}/>}
+           {text === true && <p><small className="text-muted">Lorem ipsum dolor sit amet...</small></p>}
+         </Card.Footer>}
+       </Card>
       :<Card>
         <div className="row">
           <div className="col-sm-6" ><Card.Img src="/images/mong.png" alt="Logo"/></div>
