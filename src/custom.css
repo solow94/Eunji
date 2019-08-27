@@ -1,0 +1,51 @@
+.point {
+    background-color: #F15F5F ;
+    width:13px;
+    height:13px;
+    border-radius: 50px;
+  }
+
+.n_point {
+    background-color:rgb(158, 158, 155) ;
+    width:13px;
+    height:13px;
+    border-radius: 50px;
+}
+
+textarea::placeholder{
+    color:red
+}
+
+.row2 {
+    padding:1rem;
+}
+
+.title {
+    font-size: 15px;
+}
+
+.hilight {
+    color:red;
+}
+
+.small {
+    color:gray;
+    text-decoration: line-through;
+}
+
+.circle:before {
+    color: #F15F5F;
+    content: ' \25CF';
+    font-size: 25px;
+  }
+
+.wrap {
+    position: relative;
+}
+
+.wrap span{
+    color:gray;
+    position: absolute;
+    bottom:5px;
+    right:15px;
+}
